@@ -5,7 +5,7 @@ Expecta-OCMock
 Based on [Expecta+OCMock] (https://github.com/dblock/ocmock-expecta)
 
 Differences from Expecta+OCMock:
-- Does not call method one more time at the end of the test. 
+- Does not call the method one more time at the end of the test. 
 - Supports asynchronous methods.
 - Does not need @mockify to be called on the object.
 
