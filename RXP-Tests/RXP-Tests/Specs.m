@@ -57,6 +57,10 @@
     return ++self.counter;
 }
 
+- (BOOL)methodWithInt:(NSInteger)anInt {
+    return true;
+}
+
 @end
 
 SpecBegin(ExpectaOCMockMatchers)
@@ -71,6 +75,11 @@ context(@"tests that should succeed", ^{
     it(@"method call", ^{
         expect(sut).method(methodVoid).to.beCalled();
         [sut methodVoid];
+    });
+    
+    fit(@"checks for arguments and return value", ^{
+        expect(sut).method(methodWithInt:).with(1).returning(YES).to.beCalled();
+        [sut methodWithInt:1];
     });
     
     context(@"getters/setters", ^{

@@ -2,6 +2,12 @@ Expecta-OCMock
 ==============
 
 [Expecta](https://github.com/specta/expecta) matchers for [OCMock 3.x](https://github.com/erikdoe/ocmock).
+Based on [Expecta+OCMock] (https://github.com/dblock/ocmock-expecta)
+
+Differences from Expecta+OCMock:
+- Does not call method one more time at the end of the test. 
+- Supports asynchronous methods.
+- Does not need @mockify to be called on the object.
 
 ## Examples
 
@@ -11,44 +17,41 @@ Expecta-OCMock
 // These never stub.
 
 it(@"checks for a method", ^{
-    @mockify(sut);
-
-    expect(sut).to.receive(@selector(method));
-    [sut method];
+    expect(sut).method(methodWithInt:).to.beCalled();
+    [sut methodWithInt:1];
 });
 
-// Checks that a method has been called.
-// Then calls it again at the end of the test to check it's return value.
-// be wary if you have side-effects with this.
-
-it(@"checks for a return value", ^{
-    @mockify(sut);
-    
-    expect(sut).receive(@selector(method2)).returning(@2);
-    [sut method2];
+it(@"check for an int argument", ^{
+    expect(sut).method(setInteger:).with(17).to.beCalled();
+    [sut setInteger:17];
 });
 
-// Checks that something has been called and that it has the expected arguments
-
-it(@"checks for an argument to the method", ^{
-    @mockify(sut);
-    
-    expect(sut).receive(@selector(method3:)).with(@[@"thing"]);
-    [sut method3:@"thing"];
+it(@"checks for the returned value", ^{
+    expect(sut).method(floatValue).returning(4.22).to.beCalled();
+    [sut floatValue];
 });
-```
 
-### Get it
+it(@"checks for the argument and return value", ^{
+    expect(sut).method(methodWithInt:).with(1).returning(YES).to.beCalled();
+    [sut methodWithInt:1];
+});
 
-```
-pod "Expecta+OCMock", "~> 2.0"
-```
+it(@"checks asynchronous methods", ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [sut doSomething];
+    });
+    expect(sut).method(doSomething).will.beCalled();
+});
 
-For OCMock 2 support, 
+it(@"checks any() arguments", ^{
+    expect(sut).method(methodWithIntArg:string:number:).with(any(), any(), any()).to.beCalled();
+    [sut methodWithIntArg:1919 string:@"teststring" number:@198];
+});
 
-```
-pod "Expecta+OCMock", "~> 1.0"
-```
+it(@"checks only the first argument", ^{
+    expect(sut).method(methodWithIntArg:string:number:).with(1919).to.beCalled();
+    [sut methodWithIntArg:1919 string:@"teststring" number:@198];
+});
 
 ### License
 

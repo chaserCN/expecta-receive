@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/chaserCN/expecta-receive'
   s.license      = 'MIT'
   s.author       = ['Nikolay Popok' => "nikolay.popok@gmail.com"]
-  s.source       = { :git => 'https://github.com/chaserCN/expecta-receive', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/chaserCN/expecta-receive.git', :tag => s.version.to_s }
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.source_files = 'PodSources/**/*.{h,m}'
