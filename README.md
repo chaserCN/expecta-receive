@@ -1,4 +1,4 @@
-Expecta-OCMock
+Expecta+Receive
 ==============
 
 [Expecta](https://github.com/specta/expecta) matchers for [OCMock 3.x](https://github.com/erikdoe/ocmock).
