@@ -1,0 +1,7 @@
+platform :ios, '7.0'
+
+target 'RXP-Tests', :exclusive => true do
+  pod 'OCMock', '>= 3.2'
+  pod 'Specta'
+  pod 'Expecta+Receive', :path => "../"
+end

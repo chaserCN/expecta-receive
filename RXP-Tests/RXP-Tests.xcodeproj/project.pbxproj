@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D38F6EB35405910240DB2F4 /* libPods-RXP-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1C933C32D1254491AD27EB /* libPods-RXP-Tests.a */; };
+		EB24FD8D1CA70372000B8B11 /* Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = EB24FD8C1CA70372000B8B11 /* Specs.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3971192941C20E45084B183C /* Pods-RXP-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXP-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXP-Tests/Pods-RXP-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		45B9C9405D378C04D4B7D323 /* Pods-RXP-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXP-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXP-Tests/Pods-RXP-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4E1C933C32D1254491AD27EB /* libPods-RXP-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RXP-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB24FD831CA7034F000B8B11 /* RXP-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RXP-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB24FD881CA7034F000B8B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB24FD8C1CA70372000B8B11 /* Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Specs.m; sourceTree = "<group>"; };
+		EB24FD8E1CA703B7000B8B11 /* RXP-Tests.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RXP-Tests.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB24FD801CA7034F000B8B11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D38F6EB35405910240DB2F4 /* libPods-RXP-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F7AE42724D42DDA131296DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3971192941C20E45084B183C /* Pods-RXP-Tests.debug.xcconfig */,
+				45B9C9405D378C04D4B7D323 /* Pods-RXP-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E00D6A23A52101089C607264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E1C933C32D1254491AD27EB /* libPods-RXP-Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB24FD781CA702D3000B8B11 = {
+			isa = PBXGroup;
+			children = (
+				EB24FD851CA7034F000B8B11 /* RXP-Tests */,
+				EB24FD841CA7034F000B8B11 /* Products */,
+				2F7AE42724D42DDA131296DF /* Pods */,
+				E00D6A23A52101089C607264 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB24FD841CA7034F000B8B11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB24FD831CA7034F000B8B11 /* RXP-Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB24FD851CA7034F000B8B11 /* RXP-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EB24FD8C1CA70372000B8B11 /* Specs.m */,
+				EB24FD8E1CA703B7000B8B11 /* RXP-Tests.pch */,
+				EB24FD881CA7034F000B8B11 /* Info.plist */,
+			);
+			path = "RXP-Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB24FD821CA7034F000B8B11 /* RXP-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB24FD891CA7034F000B8B11 /* Build configuration list for PBXNativeTarget "RXP-Tests" */;
+			buildPhases = (
+				25EAFBC6FE485F42D4B8119B /* Check Pods Manifest.lock */,
+				EB24FD7F1CA7034F000B8B11 /* Sources */,
+				EB24FD801CA7034F000B8B11 /* Frameworks */,
+				EB24FD811CA7034F000B8B11 /* Resources */,
+				2586A73B5FAED6CAF659549F /* Embed Pods Frameworks */,
+				8391DB8B65F79D69E50B2A2E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RXP-Tests";
+			productName = "RXP-Tests";
+			productReference = EB24FD831CA7034F000B8B11 /* RXP-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB24FD791CA702D3000B8B11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					EB24FD821CA7034F000B8B11 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EB24FD7C1CA702D3000B8B11 /* Build configuration list for PBXProject "RXP-Tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB24FD781CA702D3000B8B11;
+			productRefGroup = EB24FD841CA7034F000B8B11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB24FD821CA7034F000B8B11 /* RXP-Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB24FD811CA7034F000B8B11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2586A73B5FAED6CAF659549F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RXP-Tests/Pods-RXP-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25EAFBC6FE485F42D4B8119B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8391DB8B65F79D69E50B2A2E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RXP-Tests/Pods-RXP-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB24FD7F1CA7034F000B8B11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB24FD8D1CA70372000B8B11 /* Specs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EB24FD7D1CA702D3000B8B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EB24FD7E1CA702D3000B8B11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		EB24FD8A1CA7034F000B8B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3971192941C20E45084B183C /* Pods-RXP-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "RXP-Tests/RXP-Tests.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "RXP-Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "chaser.RXP-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB24FD8B1CA7034F000B8B11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B9C9405D378C04D4B7D323 /* Pods-RXP-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "RXP-Tests/RXP-Tests.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "RXP-Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "chaser.RXP-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB24FD7C1CA702D3000B8B11 /* Build configuration list for PBXProject "RXP-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB24FD7D1CA702D3000B8B11 /* Debug */,
+				EB24FD7E1CA702D3000B8B11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB24FD891CA7034F000B8B11 /* Build configuration list for PBXNativeTarget "RXP-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB24FD8A1CA7034F000B8B11 /* Debug */,
+				EB24FD8B1CA7034F000B8B11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB24FD791CA702D3000B8B11 /* Project object */;
+}

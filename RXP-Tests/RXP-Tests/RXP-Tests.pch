@@ -1,0 +1,33 @@
+//
+//  EXPMatchers+OCMock-Prefix.pch
+//  EXPMatchers+OCMock
+//
+//  Created by Daniel Doubrovkine on 1/19/14.
+//
+//
+
+#ifdef __OBJC__
+
+#define EXP_SHORTHAND
+#include <Specta/Specta.h>
+#include <Expecta/Expecta.h>
+#include <OCMock/OCMock.h>
+#include "Expecta+Receive.h"
+#import <XCTest/XCTest.h>
+
+#define assertPass(expr) \
+XCTAssertNoThrow((expr))
+
+#define assertFail(expr, message...) \
+XCTAssertThrowsSpecificNamed(expr, NSException, ## message)
+
+#define assertEquals(a, b) XCTAssertEqual((a), (b))
+#define assertEqualObjects(a, b) XCTAssertEqualObjects((a), (b))
+#define assertTrue(a) XCTAssertTrue((a))
+#define assertFalse(a) XCTAssertFalse((a))
+#define assertNil(a) XCTAssertNil((a))
+
+#define test_expect(a) [expect(a) test]
+
+
+#endif
