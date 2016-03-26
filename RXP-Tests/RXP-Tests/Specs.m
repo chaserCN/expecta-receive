@@ -77,7 +77,7 @@ context(@"tests that should succeed", ^{
         [sut methodVoid];
     });
     
-    fit(@"checks for arguments and return value", ^{
+    it(@"checks for arguments and return value", ^{
         expect(sut).method(methodWithInt:).with(1).returning(YES).to.beCalled();
         [sut methodWithInt:1];
     });
@@ -147,8 +147,8 @@ context(@"tests that should succeed", ^{
     });
     
     context(@"any values", ^{
-        it(@"checks for any() arguments", ^{
-            expect(sut).method(methodWithIntArg:string:number:).with(any(), any(), any()).to.beCalled();
+        fit(@"checks for any() arguments", ^{
+            expect(sut).method(methodWithIntArg:string:number:).with(any(), @"teststring", any()).to.beCalled();
             [sut methodWithIntArg:1919 string:@"teststring" number:@198];
         });
     });
@@ -349,7 +349,7 @@ it(@"checks for a return object", ^{
     [sut method22];
 });
 
-fit(@"checks for a returned bool", ^{
+it(@"checks for a returned bool", ^{
     expect(sut).method(methodBool).returning(YES).to.beCalled();
     [sut methodBool];
 });

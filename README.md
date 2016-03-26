@@ -17,7 +17,7 @@ Differences from Expecta+OCMock:
 // These never stub.
 
 it(@"checks for a method", ^{
-    expect(sut).method(methodWithInt:).to.beCalled();
+    expect(sut).method(setInteger:).to.beCalled();
     [sut methodWithInt:1];
 });
 
@@ -31,11 +31,6 @@ it(@"checks for the returned value", ^{
     [sut floatValue];
 });
 
-it(@"checks for the argument and return value", ^{
-    expect(sut).method(methodWithInt:).with(1).returning(YES).to.beCalled();
-    [sut methodWithInt:1];
-});
-
 it(@"checks asynchronous methods", ^{
     dispatch_async(dispatch_get_main_queue(), ^{
         [sut doSomething];
@@ -44,7 +39,7 @@ it(@"checks asynchronous methods", ^{
 });
 
 it(@"checks any() arguments", ^{
-    expect(sut).method(methodWithIntArg:string:number:).with(any(), any(), any()).to.beCalled();
+    expect(sut).method(methodWithIntArg:string:number:).with(any(), @"teststring", any()).to.beCalled();
     [sut methodWithIntArg:1919 string:@"teststring" number:@198];
 });
 
