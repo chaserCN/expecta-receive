@@ -5,7 +5,7 @@ Expecta-OCMock
 Based on [Expecta+OCMock] (https://github.com/dblock/ocmock-expecta)
 
 Differences from Expecta+OCMock:
-- Does not call the method one more time at the end of the test. 
+- Does not call a method one more time at the end of the test. 
 - Supports asynchronous methods.
 - Does not need @mockify to be called on the object.
 
@@ -21,12 +21,12 @@ it(@"checks for a method", ^{
     [sut setInteger:1];
 });
 
-it(@"checks for the argument", ^{
+it(@"checks for an argument", ^{
     expect(sut).method(setInteger:).with(17).to.beCalled();
     [sut setInteger:17];
 });
 
-it(@"checks for the returned value", ^{
+it(@"checks for a returned value", ^{
     expect(sut).method(floatValue).returning(4.22).to.beCalled();
     [sut floatValue];
 });
