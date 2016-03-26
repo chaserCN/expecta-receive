@@ -18,10 +18,10 @@ Differences from Expecta+OCMock:
 
 it(@"checks for a method", ^{
     expect(sut).method(setInteger:).to.beCalled();
-    [sut methodWithInt:1];
+    [sut setInteger:1];
 });
 
-it(@"check for an int argument", ^{
+it(@"checks for the argument", ^{
     expect(sut).method(setInteger:).with(17).to.beCalled();
     [sut setInteger:17];
 });
