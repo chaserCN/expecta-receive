@@ -47,6 +47,7 @@ it(@"checks only the first argument", ^{
     expect(sut).method(methodWithIntArg:string:number:).with(1919).to.beCalled();
     [sut methodWithIntArg:1919 string:@"teststring" number:@198];
 });
+```
 
 ### License
 
